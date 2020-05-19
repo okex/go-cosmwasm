@@ -52,3 +52,11 @@ but we are not there yet.
 To build the rust side, try `make build-rust` and wait for it to compile. This depends on
 `cargo` being installed with `rustc` version 1.39+. Generally, you can just use `rustup` to
 install all this with no problems.
+
+## Toolchain
+
+The Rust toolchain is pinned in the file `rust-toolchain`. When choosing a version, please
+use version with clippy, rustfmt and rls available to make Simon happy.
+
+- Mac: https://rust-lang.github.io/rustup-components-history/x86_64-apple-darwin.html
+- Linux: https://rust-lang.github.io/rustup-components-history/x86_64-unknown-linux-gnu.html
