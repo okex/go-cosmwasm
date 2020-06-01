@@ -49,7 +49,7 @@ build-go:
 	go build ./...
 
 test:
-	RUST_BACKTRACE=1 go test -v ./api ./types .
+	RUST_BACKTRACE=1 GODEBUG=cgocheck=2 go test -v ./api ./types .
 
 # we should build all the docker images locally ONCE and publish them
 docker-image-centos7:
